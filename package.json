@@ -1,0 +1,24 @@
+{
+  "name": "yellowtailalarm",
+  "version": "1.0.0",
+  "description": "Yellow Tail fish count alert system",
+  "main": "node /src/app.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickOliveira/YellowTailAlarm.git"
+  },
+  "author": "Nicholas Oliveira (nicholas@oliveira.me)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NickOliveira/YellowTailAlarm/issues"
+  },
+  "homepage": "https://github.com/NickOliveira/YellowTailAlarm#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.6.0"
+  }
+}
