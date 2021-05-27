@@ -1,6 +1,7 @@
 // create an express app
 const express = require("express")
 const app = express()
+const db = require('./api/queries')
 
 //app.use(express.json())
 app.use(express.urlencoded({
@@ -16,13 +17,7 @@ app.get("/api", function (req, res) {
   res.send("<h1>Hello World!</h1>")
 })
 
-app.post('/register', function (req, res) {
-  console.log("Post recieved:")
-  console.log(req.body)
-  console.log(process.env.DATABASE_URL)
-  
-  res.redirect('/')
-})
+app.post('/register', db.addUser)
 
 
 // start the server listening for requests
